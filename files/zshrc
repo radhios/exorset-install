@@ -1,0 +1,179 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# ADD BY ANSIBLE
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/roberto/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="afowler"
+#ZSH_THEME="af-magic"
+#ZSH_THEME="amuse"
+#ZSH_THEME="awesomepanda"
+#ZSH_THEME="clean"
+ZSH_THEME="gentoo"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git vagrant)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Mis aliases
+# by Bob
+alias usagi='ssh -XY -J radhios@login.df.uba.ar root@usagi.df.uba.ar'
+alias mail='ssh -XY -J radhios@login.df.uba.ar root@mail.df.uba.ar'
+alias odisea='ssh -XY -J radhios@login.df.uba.ar roberto@odisea.df.uba.ar'
+alias backup='ssh -XY -J radhios@login.df.uba.ar root@backup.df.uba.ar'
+alias jen='ssh -XY -J radhios@login.df.uba.ar root@jen.df.uba.ar'
+alias richmond='ssh -XY -J radhios@login.df.uba.ar root@richmond.df.uba.ar'
+alias drwho='ssh -XY -J radhios@login.df.uba.ar root@drwho.df.uba.ar'
+alias drno='ssh -XY -J radhios@login.df.uba.ar root@drno.df.uba.ar'
+alias sortida='ssh -XY -J radhios@login.df.uba.ar root@sortida.df.uba.ar'
+alias roy='ssh -XY -J radhios@login.df.uba.ar root@roy.df.uba.ar'
+alias print='ssh -XY -J radhios@login.df.uba.ar root@print.df.uba.ar'
+alias glenda='ssh -XY -J radhios@login.df.uba.ar root@glenda.df.uba.ar'
+alias buzz='ssh -XY -J radhios@login.df.uba.ar root@buzz.df.uba.ar'
+alias ruperto='ssh -XY -J radhios@login.df.uba.ar root@ruperto.df.uba.ar'
+alias nube='ssh -XY -J radhios@login.df.uba.ar root@nube.df.uba.ar'
+alias gutenberg='ssh -XY -J radhios@login.df.uba.ar root@gutenberg.df.uba.ar'
+alias proxy='ssh -XY -J radhios@login.df.uba.ar root@proxy.df.uba.ar'
+alias moss='ssh -XY -J radhios@login.df.uba.ar root@moss.df.uba.ar'
+alias webusers='ssh -XY -J radhios@login.df.uba.ar root@webusers.df.uba.ar'
+alias douglas='ssh -XY -J radhios@login.df.uba.ar root@douglas.df.uba.ar'
+alias virtweb='ssh -XY -J radhios@login.df.uba.ar root@virtweb.df.uba.ar'
+alias douglas='ssh -XY -J radhios@login.df.uba.ar root@douglas.df.uba.ar'
+alias marklar='ssh -XY -J radhios@login.df.uba.ar root@marklar.df.uba.ar'
+alias fai-server='ssh -XY -J radhios@login.df.uba.ar root@fai-server.df.uba.ar'
+alias afaserver='ssh -XY -J radhios@login.df.uba.ar root@afan.df.uba.ar'
+alias backdoor='ssh -XY radhios@backdoor.df.uba.ar'
+alias dirac='ssh -XY radhios@dirac.df.uba.ar'
+#
+# Commands Alias
+#
+alias fd='fdfind'
+alias em='emacs -nw'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# NodeJS
+
+# Go
+export GO_HOME=/home/roberto/Projects/Tools/go/bin
+
+# Postman
+export POSTMAN_HOME=/home/roberto/Projects/Tools/Postman
+
+# Rust
+export RUSTUP_HOME=/home/roberto/.cargo/bin
+
+# Local Python Libs
+export PYTHON_LIB=/home/roberto/.local/bin
+
+# Expot new PATH
+export PATH=$GO_HOME:$POSTMAN_HOME:$RUSTUP_HOME:$PATH
+
+# Pyenv
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+# Docker Machine
+#PS1='[\u@\h \W$(__docker_machine_ps1)]\$ '
+
+# Tmux
+alias tmuxinator=~/Projects/Git/tmuxinator/bin/tmuxinator
+
+# ssh agent
+alias ssha='eval $(ssh-agent) && ssh-add ~/.ssh/id_rsa_npp_df'
+
