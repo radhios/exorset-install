@@ -10,6 +10,8 @@
       - htop
       - tmux
       - vim-nox
+      - python3-psutil
+      - dconf-cli
 
   - name: Copy wallpaper file
     copy:
