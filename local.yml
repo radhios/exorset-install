@@ -18,12 +18,12 @@
       owner: root
       group: root
 
-  - name Set wallpaper
+  - name: Set wallpaper
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible-ontheway.jpg'"
 
-  - name Set wallpaper position
+  - name: Set wallpaper position
     dconf:
       key: "/org/gnome/desktop/background/picture-position"
       value: "'scaled'"
