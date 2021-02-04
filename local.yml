@@ -1,6 +1,6 @@
 ---
 # Tasks to complete before running roles
-- hosts: all
+- hosts: workstation
   tags: always
   become: true
   pre_tasks:
@@ -10,7 +10,7 @@
       changed_when: False
       when: ansible_distribution in ["Debian", "Pop!_OS", "Ubuntu"]
 
-- hosts: all
+- hosts: workstation
   connection: local
   become: true
 
