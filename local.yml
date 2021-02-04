@@ -31,3 +31,18 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-position"
       value: "'scaled'"
+
+  - name: Copy .baschrc file
+    copy:
+      src: files/bashrc
+      dest: /home/roberto/.bashrc
+      owner: roberto
+      group: roberto
+
+  - name: Copy .zshrc file
+    copy:
+      src: files/zshrc
+      dest: /home/roberto/.zshrc
+      owner: roberto
+      group: roberto
+
