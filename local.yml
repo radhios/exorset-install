@@ -16,7 +16,7 @@
   - name: Copy wallpaper file
     copy:
       src: files/ontheway.jpg
-      dst: /usr/share/backgrounds/ansible-ontheway.jpg
+      dest: /usr/share/backgrounds/ansible-ontheway.jpg
       owner: root
       group: root
 
