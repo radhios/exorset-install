@@ -1,6 +1,6 @@
 ---
 # Tasks to complete before running roles
-- hosts: workstation
+- hosts: all
   tags: always
   become: true
   pre_tasks:
@@ -23,6 +23,7 @@
       - vim-nox
       - python3-psutil
       - dconf-cli
+      - gthumb
 
   - name: Copy wallpaper file
     copy:
